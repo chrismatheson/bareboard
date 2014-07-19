@@ -2,13 +2,19 @@
 <html>
     <head>
         <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css" rel="stylesheet">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <style>
             body.container-fluid {
-                padding-top: 38px;
+                padding-top: 4em;
                 padding-left: 0px;
                 padding-right: 0px;
                 border: 0px;
                 margin: 0px;
+            }
+
+            /* allways want space between icons and the internal link text*/
+            a i {
+                padding-right: 0.5em;
             }
 
             header h1 {
@@ -26,6 +32,7 @@
             }
 
             section {
+                min-height: 20em;
                 border: 0em;
             }
 
@@ -34,7 +41,7 @@
                 padding-bottom: 6em;
             }
 
-            .bio:nth-of-type(2n-1) {
+            section:nth-of-type(2n-1) {
                 box-shadow: inset 0em 0em 2em;
             }
 
@@ -54,8 +61,6 @@
 
             .bio.chris {
                 background-color: #efefef;
-                margin-left: -10em;
-                margin-right: -10em;
             }
 
             .bio.paul {
@@ -66,45 +71,65 @@
             .blurb {
                 padding-top: 2em;
                 text-align: center;
-                font-size: 1.4em;
+                font-size: 1.6em;
             }
+
         </style>
     </head>
     <body class="container-fluid">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <ul class="nav navbar-nav">
-                    <li></li>
-                </ul>
+                <p class="navbar-brand">Bareboard</p>
             </div>
         </nav>
         <header class="row">
-            <h1>Bareboard</h1>
-            <p class="blurb">We are a company who help your ideas come to life to create a full system that can reach out from the web and touch the world</p>
+            <div class=".col-xs-12">
+                <h1>Bareboard</h1>
+                <p class="blurb">Nurturing ideas into reality, that can connect to the world</p>
+            </div>
         </header>
         <section class="row bio chris">
-            <img src="//fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/260132_10150209883461262_7005111_n.jpg" alt="" class="img-circle center-block">
-            <p class="blurb">I'm totaly awesome and i do all the things</p>
-            <ul>
-                <li>Tame SaaS into no fuss scalable bedrock</li>
-                <li>Write microservices</li>
-                <li>structure webapps</li>
-            </ul>
+            <div class="container">
+                <img src="//fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/t1.0-9/260132_10150209883461262_7005111_n.jpg" alt="" class="img-circle center-block">
+                <p class="blurb">I'm totaly awesome and i do all the things</p>
+                <ul>
+                    <li>Tame SaaS into no fuss scalable bedrock</li>
+                    <li>Write microservices</li>
+                    <li>structure webapps</li>
+                </ul>
+<!--                <a href="twitter://post?message=hello%20%40chrismatheson"><i class="fa fa-twitter"></i>Say hello</a>-->
+                <a href="https://twitter.com/intent/tweet?screen_name=Chrismatheson"><i class="fa fa-twitter"></i>Say hello</a>
+            </div>
         </section>
         <section class="row bio paul">
-            <img src="//fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/155516_10150104413748594_3430257_n.jpg" alt="" class="img-circle center-block">
-            <p class="blurb">I'm totaly awesome and i do all the things</p>
-            <ul>
-                <li>craft layout</li>
-                <li>prototpye concepts</li>
-                <li>analyise designs</li>
-            </ul>
-
+            <div class="container">
+                <img src="//fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xfp1/t1.0-9/155516_10150104413748594_3430257_n.jpg" alt="" class="img-circle center-block">
+                <p class="blurb">I'm totaly awesome and i do all the things</p>
+                <ul>
+                    <li>craft layout</li>
+                    <li>prototpye concepts</li>
+                    <li>analyise designs</li>
+                </ul>
+            </div>
         </section>
 
-        <section class="row center-block">
-            <p class="col-md-offset-4 col-md-6"><h3>Services offered</h3></p>
-        <img src="code.svg">
+        <section class="row services">
+            <div class="container">
+                <h3>Services offered</h3>
+                <ul>
+                    <li>Techincal advice</li>
+                    <li>Hardware design</li>
+                    <li>PCB layout, first artifact testing</li>
+                    <li>Web apps</li>
+                    <li>Supporting web services</li>
+                </ul>
+
+
+                <h3>Some example projects</h3>
+                <p>Internet connected sensors to report information to an existing web service.</p>
+                <p>Hardware controllable via a REST API.</p>
+                <p>Connected devices, backend servce and web GUI for control/monitoring</p>
+            </div>
         </section>
     </body>
 </html>
